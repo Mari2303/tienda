@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de la barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #c92c2c;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input#searchBar {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+

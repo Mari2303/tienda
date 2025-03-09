@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/clientes")
-@CrossOrigin("*")  // Permite que el frontend se comunique con el backend
+@CrossOrigin(origins = "http://localhost:5500") // Permite que el frontend se comunique con el backend
 public class ClienteController {
 
     @Autowired

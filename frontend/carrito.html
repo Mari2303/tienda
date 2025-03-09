@@ -1,14 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Online</title>
+    <title>Carrito</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Barra lateral -->
     <nav class="sidebar">
         <h2>Tienda</h2>
         <ul>
@@ -19,18 +19,20 @@
         </ul>
     </nav>
 
-    <!-- Contenido principal -->
     <main class="content">
-        <header>
-            <input type="text" id="searchBar" placeholder="Buscar productos...">
-        </header>
+        <h1>Carrito de Compras</h1>
+        <table id="carritoLista">
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </table>
 
-        <section id="productos">
-            <!-- Aquí se listarán los productos -->
-        </section>
+        <button id="finalizarCompra">Finalizar Compra</button>
     </main>
 
-    <script src="scripts/index.js"></script>
+    <script src="scripts/carrito.js"></script>
 </body>
 </html>
-
