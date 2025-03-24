@@ -1,20 +1,27 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Estilo de la barra lateral */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Menú lateral */
 .sidebar {
     width: 250px;
-    background-color: #c92c2c;
+    background: #b71c1c;
+    color: white;
     padding: 20px;
-    height: 100vh;
 }
 
 .sidebar h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .sidebar ul {
@@ -23,42 +30,78 @@ body {
 }
 
 .sidebar ul li {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .sidebar ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar ul li a:hover {
+    background: #9b1111;
 }
 
 /* Contenido principal */
 .content {
-    flex-grow: 1;
+    flex: 1;
     padding: 20px;
 }
 
-header {
+/* Barra de navegación superior */
+.navbar {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-input#searchBar {
-    width: 50%;
+    justify-content: space-between;
+    background: white;
     padding: 10px;
-    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b71c1c;
+    text-decoration: none;
+}
+
+.search-box {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+}
+
+/* Opciones CRUD */
+.crud-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+.crud-buttons {
+    display: flex;
+    gap: 10px;
 }
 
+.btn {
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-green { background: #4CAF50; }
+.btn-blue { background: #2196F3; }
+.btn-red { background: #f44336; }
+.btn-yellow { background: #FFC107; }
+.btn-gray { background: #757575; }
+
+.btn:hover {
+    opacity: 0.8;
+}

@@ -7,30 +7,69 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <h2>Tienda</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registrar Producto</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="registro_cliente.html">Registro Cliente</a></li>
+            </ul>
+        </aside>
+        
+        <!-- Contenido principal -->
+        <div class="content">
+            <!-- Barra de navegación superior -->
+            <nav class="navbar">
+                <a href="index.html" class="logo">Tienda Online</a>
+                <input type="text" id="searchBox" placeholder="Buscar productos..." class="search-box">
+            </nav>
+            
+            <!-- Listado de Productos -->
+            <div class="product-list">
+                <h2>Lista de Productos</h2>
+                <div id="productos-container"></div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Barra lateral -->
-    <nav class="sidebar">
-        <h2>Tienda</h2>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="registro.html">Registrar Producto</a></li>
-            <li><a href="carrito.html">Carrito</a></li>
-            <li><a href="registro_cliente.html">Registro Cliente</a></li>
-        </ul>
-    </nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const productos = [
+                { id: 1, nombre: "Laptop", precio: 800, categoria: "Electrónica" },
+                { id: 2, nombre: "Smartphone", precio: 500, categoria: "Electrónica" },
+                { id: 3, nombre: "Zapatos", precio: 50, categoria: "Moda" }
+            ];
 
-    <!-- Contenido principal -->
-    <main class="content">
-        <header>
-            <input type="text" id="searchBar" placeholder="Buscar productos...">
-        </header>
+            const container = document.getElementById("productos-container");
+            function mostrarProductos(filtrados) {
+                container.innerHTML = "";
+                filtrados.forEach(prod => {
+                    container.innerHTML += `<div class='product'>
+                        <h3>${prod.nombre}</h3>
+                        <p>Precio: $${prod.precio}</p>
+                        <p>Categoría: ${prod.categoria}</p>
+                    </div>`;
+                });
+            }
 
-        <section id="productos">
-            <!-- Aquí se listarán los productos -->
-        </section>
-    </main>
+            document.getElementById("searchBox").addEventListener("input", function() {
+                const query = this.value.toLowerCase();
+                const filtrados = productos.filter(p => p.nombre.toLowerCase().includes(query));
+                mostrarProductos(filtrados);
+            });
+            
+            mostrarProductos(productos);
 
-    <script src="scripts/index.js"></script>
+            
+        });
+    </script>
 </body>
 </html>
+
+
+
 

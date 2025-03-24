@@ -10,6 +10,7 @@
 <body>
 
     <nav class="sidebar">
+    
         <h2>Tienda</h2>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -29,6 +30,29 @@
                 <th>Acciones</th>
             </tr>
         </table>
+          <!-- Barra de Navegación -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">Tienda Online</a>
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                ☰
+            </button>
+            <ul id="menu" class="hidden md:flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Inicio</a></li>
+                <li><a href="producto.html" class="hover:underline">Productos</a></li>
+                <li><a href="registro.html" class="hover:underline">Registrar Producto</a></li>
+                <li><a href="registro_cliente.html" class="hover:underline">Registro Cliente</a></li>
+                <li><a href="carrito.html" class="hover:underline">Carrito</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script>
+        // Toggle menú en móviles
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
 
         <button id="finalizarCompra">Finalizar Compra</button>
     </main>
