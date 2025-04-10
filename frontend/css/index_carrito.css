@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(to right, #ffd6e0, #ffccd5);
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  background-color: #fff0f3;
+  width: 250px;
+  padding: 2rem 1rem;
+  border-right: 2px solid #ffc2c2;
+  min-height: 100vh;
+}
+
+.sidebar h2 {
+  text-align: center;
+  color: #d6336c;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a, .sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border-radius: 10px;
+  background-color: #ffe6ec;
+  color: #d6336c;
+  border: none;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.sidebar a:hover, .sidebar button:hover {
+  background-color: #ffc9d6;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.btn-pink {
+  background-color: #ff5e78;
+  color: white;
+  border: none;
+}
+
+.btn-pink:hover {
+  background-color: #ff3e5c;
+  color: white;
+}
