@@ -1,73 +1,73 @@
-body {
-    background: linear-gradient(to right, #ffd6e0, #ffccd5);
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
+ body {
+      background: linear-gradient(to right, #ffd6e0, #ffccd5);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
 
-  .registro-container {
-    background-color: #fff0f3;
-    padding: 2.5rem 2rem;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(255, 105, 135, 0.3);
-    max-width: 400px;
-    width: 100%;
-  }
+    .registro-container {
+      background-color: #fff0f3;
+      padding: 2.5rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(255, 105, 135, 0.3);
+      max-width: 400px;
+      width: 100%;
+    }
 
-  .logo {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #d6336c;
-    margin-bottom: 1.5rem;
-  }
+    .logo {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #d6336c;
+      margin-bottom: 1.5rem;
+    }
 
-  .highlight {
-    color: #ff5e78;
-  }
+    .highlight {
+      color: #ff5e78;
+    }
 
-  label {
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    display: block;
-    color: #d6336c;
-  }
+    label {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: block;
+      color: #d6336c;
+    }
 
-  input {
-    width: 100%;
-    padding: 10px 12px;
-    border: 2px solid #ffc2c2;
-    border-radius: 10px;
-    margin-bottom: 1.2rem;
-    transition: border-color 0.3s ease;
-  }
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 2px solid #ffc2c2;
+      border-radius: 10px;
+      margin-bottom: 1.2rem;
+      transition: border-color 0.3s ease;
+    }
 
-  input:focus {
-    border-color: #ff5e78;
-    outline: none;
-  }
+    input:focus {
+      border-color: #ff5e78;
+      outline: none;
+    }
 
-  button {
-    background-color: #ff5e78;
-    color: white;
-    border: none;
-    width: 100%;
-    padding: 10px;
-    border-radius: 12px;
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.2s;
-  }
+    button {
+      background-color: #ff5e78;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 10px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
 
-  button:hover {
-    background-color: #ff3e5c;
-    transform: scale(1.02);
-  }
+    button:hover {
+      background-color: #ff3e5c;
+      transform: scale(1.02);
+    }
 
-  .message {
-    margin-top: 1rem;
-    text-align: center;
-    font-weight: 500;
-  }
+    .message {
+      margin-top: 1rem;
+      text-align: center;
+      font-weight: 500;
+    }
